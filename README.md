@@ -64,3 +64,59 @@ To predict the correlation between different attributes and find the accuracy be
 * Providers associated with higher rates of reimbursement: audiologists, nephrologists, optometrists and otolaryngologists
 * Providers with lowest rates of reimbursement: Surgical providers, radiation, ER, anesthesiologists and gastroenterologists
 
+![reimbursement rate and specialty](https://user-images.githubusercontent.com/37488697/37632249-bb8c0d22-2bc3-11e8-822c-d54e6fab6b49.jpg)
+
+### CART – Provider Type and Total Payment 
+* Providers with the highest total Medicare payment amounts: Oncologists, Hematologists, Rheumatologists & Optometrists
+* This may be due to elderly patients often suffering from joint and eye problems, as well as cancer
+
+### CART and C5.0 – Gender and Total Payment 
+* Male physicians were associated with higher Medicare reimbursements than Female physicians
+* The median Medicare payment for Female physicians was $154,466, compared to $498,569  for males(over 3X as much)
+* This can be due to the fact that men outnumbered women in all the specialties associated with the highest reimbursement amounts (i.e. optometry, oncology), while more women were in specialties with the lowest reimbursement amounts (i.e. therapy)
+
+### Kmeans – Gender and Total Payment 
+This conclusion was also supported by clustering total Medicare payments by each gender
+
+### CART and C5.0 – State/Region and Total Payment
+* Higher Medicare payment totals were associated with south, southwest and west regions
+* Florida was the state with the highest Medicare reimbursement totals
+* Not surprisingly, Florida has the greatest proportion of people who are at least 65, according to the U.S. Census Bureau
+
+### Kmeans Clustering – Region and Total Payment
+This conclusion was supported by clustering the total Medicare payments for the 5 regions using Kmeans
+
+
+### CART– Number of Services,  Number of Beneficiaries and Total Payment
+* There was also a relationship between the number of services a physician provided and the total Medicare payment amount - Higher payments were associated with a higher number of services
+* Similarly, higher payments were associated with a higher number of beneficiaries
+
+### CART – Average Life Expectancy and Reimbursement Rate 
+Highest rates of Medicare reimbursements seemed to be associated with higher state average life expectancies
+
+### Kmeans – Total Submitted Charges and Total Payment
+Total Submitted Charges by physicians seemed to have an almost linear relationship to the Total Amount Medicare actually reimbursed - Higher submitted charges were associated with higher Medicare payments
+
+
+## C5.0 Decision Trees 
+
+### C5.0 - Multiple Predictors
+
+#### Gender + Region:
+Highest Medicare reimbursement was among Males in southern and western regions
+Females were associated with the lowest reimbursement among all regions
+
+#### Gender + Specialty:
+For male physicians: oncology, hematology, dermatology, optometry and rheumatology had the highest reimbursement
+For female physicians: oncology, hematology, rheumatology had the highest reimbursement
+
+## Conclusions
+* Two most important predictors for Total Medicare Payment:
+  - Gender
+  - Specialty
+  - State/Region had less of an influence
+
+## Significance/Future Work:
+* Can be used to find what kinds of services/specialties are most used/needed by seniors
+  - Compare to historical data to see what specialties had the highest increase in number of services/beneficiaries
+* Can show varying reimbursement rates/amounts among different specialties or areas, perhaps indicating a need for reevaluation/examination by Medicare
