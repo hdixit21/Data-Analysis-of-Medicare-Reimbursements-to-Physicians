@@ -93,7 +93,7 @@ This conclusion was also supported by clustering total Medicare payments by each
 
 ![total payment category region](https://user-images.githubusercontent.com/37488697/37634869-bab7c8fe-2bce-11e8-9adc-61d0eed4aef7.jpeg)
 
-![c5 0 tree gender and region](https://user-images.githubusercontent.com/37488697/37634802-749df76c-2bce-11e8-8bf0-ae7eff743f8c.png)
+![capture](https://user-images.githubusercontent.com/37488697/37635121-3612573e-2bd0-11e8-81a7-1980622a98c1.PNG)
 
 ### Kmeans Clustering – Region and Total Payment
 This conclusion was supported by clustering the total Medicare payments for the 5 regions using Kmeans
