@@ -70,33 +70,53 @@ To predict the correlation between different attributes and find the accuracy be
 * Providers with the highest total Medicare payment amounts: Oncologists, Hematologists, Rheumatologists & Optometrists
 * This may be due to elderly patients often suffering from joint and eye problems, as well as cancer
 
+![cart total payment by specialty](https://user-images.githubusercontent.com/37488697/37634442-e6b7903a-2bcc-11e8-959d-dadd5e209f70.jpeg)
+
 ### CART and C5.0 – Gender and Total Payment 
 * Male physicians were associated with higher Medicare reimbursements than Female physicians
 * The median Medicare payment for Female physicians was $154,466, compared to $498,569  for males(over 3X as much)
 * This can be due to the fact that men outnumbered women in all the specialties associated with the highest reimbursement amounts (i.e. optometry, oncology), while more women were in specialties with the lowest reimbursement amounts (i.e. therapy)
 
+![total payment category gender](https://user-images.githubusercontent.com/37488697/37634471-0daa3530-2bcd-11e8-8388-829af7e88fb2.jpeg)
+
+![c5 0 gender](https://user-images.githubusercontent.com/37488697/37634511-4004971e-2bcd-11e8-9486-39ca870c106d.jpeg)
+
 ### Kmeans – Gender and Total Payment 
 This conclusion was also supported by clustering total Medicare payments by each gender
+
+![kmeans gender plot](https://user-images.githubusercontent.com/37488697/37634767-42451494-2bce-11e8-8e3d-1c3cfcb56dcf.jpeg)
 
 ### CART and C5.0 – State/Region and Total Payment
 * Higher Medicare payment totals were associated with south, southwest and west regions
 * Florida was the state with the highest Medicare reimbursement totals
 * Not surprisingly, Florida has the greatest proportion of people who are at least 65, according to the U.S. Census Bureau
 
+![total payment category region](https://user-images.githubusercontent.com/37488697/37634869-bab7c8fe-2bce-11e8-9adc-61d0eed4aef7.jpeg)
+
+![c5 0 tree gender and region](https://user-images.githubusercontent.com/37488697/37634802-749df76c-2bce-11e8-8bf0-ae7eff743f8c.png)
+
 ### Kmeans Clustering – Region and Total Payment
 This conclusion was supported by clustering the total Medicare payments for the 5 regions using Kmeans
 
+![kmeans region](https://user-images.githubusercontent.com/37488697/37634903-ea7fba38-2bce-11e8-8ba0-e4a99764ca69.jpeg)
 
 ### CART– Number of Services,  Number of Beneficiaries and Total Payment
 * There was also a relationship between the number of services a physician provided and the total Medicare payment amount - Higher payments were associated with a higher number of services
 * Similarly, higher payments were associated with a higher number of beneficiaries
 
+![total payment category num services](https://user-images.githubusercontent.com/37488697/37634936-1d8f661c-2bcf-11e8-9940-5fabe1b05fa9.jpeg)
+
+![total payment category num beneficiaries](https://user-images.githubusercontent.com/37488697/37634967-499d5890-2bcf-11e8-8f94-41f4c53a579d.jpeg)
+
 ### CART – Average Life Expectancy and Reimbursement Rate 
 Highest rates of Medicare reimbursements seemed to be associated with higher state average life expectancies
+
+![reimbursement rate and av life expectancy](https://user-images.githubusercontent.com/37488697/37634985-5ecaa722-2bcf-11e8-8add-48219c3dbef2.jpeg)
 
 ### Kmeans – Total Submitted Charges and Total Payment
 Total Submitted Charges by physicians seemed to have an almost linear relationship to the Total Amount Medicare actually reimbursed - Higher submitted charges were associated with higher Medicare payments
 
+![kmeans charges vs total payments](https://user-images.githubusercontent.com/37488697/37634999-7386e4c8-2bcf-11e8-8c17-b2aaccfd5d88.jpeg)
 
 ## C5.0 Decision Trees 
 
@@ -105,6 +125,8 @@ Total Submitted Charges by physicians seemed to have an almost linear relationsh
 #### Gender + Region:
 Highest Medicare reimbursement was among Males in southern and western regions
 Females were associated with the lowest reimbursement among all regions
+
+![image](https://user-images.githubusercontent.com/37488697/37635046-b3556b2e-2bcf-11e8-8fcd-9b81844063be.png)
 
 #### Gender + Specialty:
 For male physicians: oncology, hematology, dermatology, optometry and rheumatology had the highest reimbursement
